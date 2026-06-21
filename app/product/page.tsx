@@ -64,6 +64,7 @@ export default function ProductPage() {
       <div className="mx-auto max-w-5xl px-5 pb-20 md:pb-28 lg:px-8">
         <ScreenFrame
           label="Penkala workspace · Create, Ideas, Queue, Engage, Voice"
+          src="/screenshots/voice.webp"
           ratio="16/9"
         />
       </div>
