@@ -17,7 +17,7 @@ const surfaces = [
   {
     title: "See every post before it ships.",
     body: "Drafts move through a clear approval flow, with team review built in. Scheduling means we remind you. Penkala never posts to LinkedIn on its own.",
-    visual: <ScreenFrame label="Queue · approvals and team review" ratio="16/10" />,
+    visual: <ScreenFrame label="Queue · approvals and team review" src="/screenshots/queue.webp" ratio="16/10" />,
   },
 ];
 
