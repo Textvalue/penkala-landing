@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Users } from "lucide-react";
+import Image from "next/image";
 import { PageHero } from "@/components/shared/PageHero";
 import { Section } from "@/components/shared/Section";
 import { CtaBand } from "@/components/shared/CtaBand";
@@ -43,13 +43,15 @@ export default function AboutPage() {
       {/* Team photo slot */}
       <Section tint>
         <Reveal className="mx-auto max-w-4xl">
-          <div className="grid aspect-[16/9] place-items-center overflow-hidden rounded-2xl border border-rule bg-paper">
-            <div className="flex flex-col items-center gap-3 text-ink-faint">
-              <span className="grid h-12 w-12 place-items-center rounded-xl border border-rule bg-bone">
-                <Users size={20} />
-              </span>
-              <span className="text-caption">Team photo goes here</span>
-            </div>
+          <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-rule bg-paper">
+            <Image
+              src="/team.jpg"
+              alt="The team behind Penkala"
+              fill
+              sizes="(max-width: 896px) 100vw, 896px"
+              className="object-cover"
+              priority
+            />
           </div>
           <p className="mt-4 text-center text-caption text-ink-faint">The team behind Penkala.</p>
         </Reveal>
