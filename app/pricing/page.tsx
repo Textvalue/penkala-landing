@@ -46,7 +46,7 @@ export default function PricingPage() {
       <PageHero
         title={
           <>
-            Priced to <VioletWord>grow</VioletWord> with your team.
+            Your marketing&apos;s best <VioletWord>ROAS</VioletWord>.
           </>
         }
         subhead="You start free as one founder, and add the team when more people are ready to post."
