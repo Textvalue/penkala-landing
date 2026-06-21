@@ -7,6 +7,7 @@ export function FeatureRow({
   title,
   body,
   shot,
+  src,
   flip = false,
   note,
   visual,
@@ -14,6 +15,7 @@ export function FeatureRow({
   title: string;
   body: string;
   shot?: string;
+  src?: string;
   flip?: boolean;
   note?: string;
   visual?: React.ReactNode;
@@ -28,7 +30,7 @@ export function FeatureRow({
         )}
       </div>
       <Reveal className={cn(flip && "lg:order-1")}>
-        {visual ?? <ScreenFrame label={shot ?? ""} ratio="4/3" />}
+        {visual ?? <ScreenFrame label={shot ?? ""} src={src} ratio="4/3" />}
       </Reveal>
     </div>
   );

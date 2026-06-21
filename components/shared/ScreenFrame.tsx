@@ -10,10 +10,13 @@ export function ScreenFrame({
   label,
   ratio = "16/10",
   className,
+  src,
 }: {
   label: string;
   ratio?: "16/10" | "4/3" | "16/9";
   className?: string;
+  /** Real product screenshot. When set, the image replaces the empty state. */
+  src?: string;
 }) {
   const aspect =
     ratio === "4/3" ? "aspect-[4/3]" : ratio === "16/9" ? "aspect-video" : "aspect-[16/10]";
@@ -25,14 +28,19 @@ export function ScreenFrame({
         <span className="h-2.5 w-2.5 rounded-full bg-sand" />
         <span className="ml-2 truncate text-caption text-ink-faint">{label}</span>
       </div>
-      <div className={cn("relative grid place-items-center bg-bone", aspect)}>
-        <div className="flex flex-col items-center gap-2.5 text-center">
-          <span className="grid h-10 w-10 place-items-center rounded-lg border border-rule bg-paper text-ink-faint">
-            <Monitor size={18} />
-          </span>
-          <span className="text-caption text-ink-faint">Screenshot goes here</span>
+      {src ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={src} alt={label} loading="lazy" className="block w-full" />
+      ) : (
+        <div className={cn("relative grid place-items-center bg-bone", aspect)}>
+          <div className="flex flex-col items-center gap-2.5 text-center">
+            <span className="grid h-10 w-10 place-items-center rounded-lg border border-rule bg-paper text-ink-faint">
+              <Monitor size={18} />
+            </span>
+            <span className="text-caption text-ink-faint">Screenshot goes here</span>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

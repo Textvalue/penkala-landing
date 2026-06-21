@@ -36,7 +36,7 @@ export function Hero() {
       </div>
 
       <div className="mx-auto max-w-5xl pb-20 md:pb-28">
-        <ScreenFrame label="Create · your draft, with the no-AI-tells check" ratio="16/9" />
+        <ScreenFrame label="Create · your draft, with the no-AI-tells check" src="/screenshots/content.webp" ratio="16/9" />
       </div>
     </section>
   );

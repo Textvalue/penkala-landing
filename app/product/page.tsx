@@ -86,6 +86,7 @@ export default function ProductPage() {
           title="Speak what's on your mind and get a high-performing post back."
           body="The blank box is where most posting dies. Brain-dump the rough idea by voice or by typing, and the composer shapes it through your voice and your company's positioning, then shows you a clean check before anyone reads it."
           shot="Create · the composer and the clean check"
+          src="/screenshots/content.webp"
         />
       </Section>
 
@@ -111,6 +112,7 @@ export default function ProductPage() {
           title="Show up where your buyers already are."
           body="Pipeline gets built in the comments, on the posts of the people at the accounts you want to close. Penkala marks those people, surfaces what they just posted, and drafts a comment in your voice and on your strategy, through the same clean check. You read it, decide, and post it yourself."
           shot="Engage · your accounts' latest posts and a reply in your voice"
+          src="/screenshots/engage.webp"
           note="Penkala counts the conversations that turn into pipeline. Likes do not pay quota."
         />
       </Section>

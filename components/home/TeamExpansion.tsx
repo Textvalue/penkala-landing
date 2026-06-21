@@ -19,7 +19,7 @@ export function TeamExpansion() {
           </div>
         </div>
         <Reveal>
-          <ScreenFrame label="Team · roster and shared brand" ratio="4/3" />
+          <ScreenFrame label="Team · roster and shared brand" src="/screenshots/team.webp" ratio="4/3" />
         </Reveal>
       </div>
     </Section>
