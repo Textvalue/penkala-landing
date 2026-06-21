@@ -1,5 +1,6 @@
 import { Section } from "@/components/shared/Section";
 import { FeatureRow } from "@/components/home/FeatureRow";
+import { ScreenFrame } from "@/components/shared/ScreenFrame";
 
 const rows = [
   {
@@ -11,8 +12,12 @@ const rows = [
   {
     title: "Give every post a visual worth the scroll.",
     body: "Penkala suggests proven visuals and infographics, then builds the one you choose in your brand kit, so every post looks designed without a designer.",
-    shot: "Visuals · on-brand in one click",
-    src: "/screenshots/visuals.webp",
+    // Portrait infographic — constrain width so the zig-zag row stays balanced.
+    visual: (
+      <div className="mx-auto max-w-[360px]">
+        <ScreenFrame label="Visuals · on-brand in one click" src="/screenshots/ai-without-humans.webp" />
+      </div>
+    ),
   },
   {
     title: "Sound like the expert you already are.",
