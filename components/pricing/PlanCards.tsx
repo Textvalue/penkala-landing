@@ -58,11 +58,11 @@ const plans: Plan[] = [
   },
   {
     name: "Team",
-    price: { monthly: "$49", annual: "$39" },
-    suffix: "/seat/mo",
+    price: { monthly: "$99", annual: "$79" },
+    suffix: "/mo",
     note: {
-      monthly: "Per active seat, plus a $99/mo workspace base.",
-      annual: "Per active seat, plus a $79/mo workspace base.",
+      monthly: "Plus $49 per active seat.",
+      annual: "Plus $39 per active seat.",
     },
     fit: "For the 3 to 15 person team sharing one brand and a pipeline number this quarter.",
     bullets: [
